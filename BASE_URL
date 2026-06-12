@@ -1,0 +1,20 @@
+// Apne frontend ke code mein ye Render wala URL dalo
+const BACKEND_URL = "https://og-vansh.onrender.com";
+
+// Jab koi user "Create Server" ka button dabayega
+function createServer(serverData) {
+    fetch(`${BACKEND_URL}/api/create-server`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(serverData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("Server status:", data);
+        alert("Server successfully ban gaya!");
+    })
+    .catch(error => console.error("Error aaya:", error));
+}
+
