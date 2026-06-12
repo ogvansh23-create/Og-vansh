@@ -1,0 +1,13 @@
+{
+  "name": "my-free-bot",
+  "version": "1.0.0",
+  "description": "24/7 Free Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
+
